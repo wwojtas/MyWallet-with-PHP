@@ -138,17 +138,17 @@
     <!-- main -->
 
     <main>
-        <div class="container">
+        <div class="container pb-5 mb-4">
             <div class="row  mt-5 pt-5">
-                <div class="col-8 offset-2 col-lg-6 offset-lg-3 text-center mt-5">
-                    <h1> Dodaj wydatek </h1>
+                <div class="col-8 offset-2 col-lg-6 offset-lg-3  mt-5">
+                    <h1 class="text-center"> Dodaj wydatek </h1>
 
                         <!-- value -->
                     <form class="form" action="" method="post">
                         <div class="row my-4">
                             <label for="cashExit" class="col-sm-2 col-form-label"> <span class="bold"> Wartość:</span>
                             </label>
-                            <div class="col-sm-8 offset-sm-2">
+                            <div class="col-sm-8 offset-sm-2 text-right">
                                 <input type="number" class="form-control" id="cashExit" name="amount" step="0.01" min="0.01" value="">
                                 <?php
                                     if (isset($_SESSION['e_amount']))
@@ -308,7 +308,7 @@
                             </div>
                         </div>
  
-                        <div class="pt-4">
+                        <div class="pt-4 text-center">
                             <button type="submit" class="btn btn-primary col-4"> Dodaj </button>
                             <input type="reset" class="btn btn-danger col-4" value="Anuluj">
                         </div>
@@ -322,8 +322,8 @@
 
     <!-- footer -->
 
-    <footer class="bg-dark text-light mt-5 ">
-        <p class="py-5 px-3 mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
+    <footer class="bg-dark text-light footer fixed-bottom">
+        <p class="py-3  mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
     </footer>
 
 

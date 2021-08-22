@@ -83,7 +83,6 @@
                                 <label for="periodOfTime"> <h2> Wybierz okres </h2> </label>
                                 <div class="col-6 m-auto mt-3"> 
                                     <select id="periodOfTime" name="periodOfTime">
-                                        <option > Wybierz okres </option>
                                         <option  value="currentMonth"> Bieżący miesiąc </option>
                                         <option  value="previousMonth"> Poprzedni miesiąc </option>
                                         <option  value="currentYear"> Bieżący rok </option>
@@ -104,8 +103,8 @@
 
     <!-- footer -->
 
-    <footer class="bg-dark text-light mt-5 ">
-        <p class="py-5 px-3 mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"> </i> <span class="orange-color">MyWallet</span> </p>
+    <footer class="bg-dark text-light footer fixed-bottom">
+        <p class="py-3  mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
     </footer>
 
 <!-- bootstrap -->

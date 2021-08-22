@@ -137,8 +137,8 @@ if(isset($_POST['amount']))
     <main>
         <div class="container">
             <div class="row  mt-5 pt-5">
-                <div class="col-8 offset-2 col-lg-6 offset-lg-3 text-center mt-5">
-                    <h1> Dodaj przychód </h1>
+                <div class="col-8 offset-2 col-lg-6 offset-lg-3 mt-5">
+                    <h1 class="text-center"> Dodaj przychód </h1>
                     <div class="form">
 
                         <form method="post">
@@ -183,8 +183,8 @@ if(isset($_POST['amount']))
                                 <label for="income_category" class="col-sm-2 col-form-label"> <span class="bold"> Kategoria:</span>
                                 </label>
                                 <div class="col-sm-8 offset-sm-2">
-                                    <div class="col-10 col-md-6 m-auto py-3 custom-select" style="width:auto;">
-                                        <select name="income_category" for="income_category">
+                                    <div class="col-10 col-md-6 m-auto py-3" style="width:auto;">
+                                        <select name="income_category" for="income_category" >
                                             <option value="0" selected> Wybierz kategorię przychodu </option>
                                                
                                             <?php
@@ -255,7 +255,7 @@ if(isset($_POST['amount']))
                             </div>
                             
                                 <!-- submit or reset -->
-                            <div class="pt-4">
+                            <div class="pt-4 text-center">
                                 <button type="submit" class="btn btn-primary col-4"> Dodaj </button>
                                 <input type="reset" class="btn btn-danger col-4" value="Anuluj">
                             </div>
@@ -269,8 +269,8 @@ if(isset($_POST['amount']))
 
     <!-- footer -->
 
-    <footer class="bg-dark text-light mt-5 ">
-        <p class="py-5 px-3 mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
+    <footer class="bg-dark text-light footer fixed-bottom">
+        <p class="py-3  mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">

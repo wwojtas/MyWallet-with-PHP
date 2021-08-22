@@ -40,7 +40,7 @@
 		$pass_hash = password_hash($password, PASSWORD_DEFAULT);
 		 
 		//re-%cap-%t-cha%
-		$secret = "secret";
+		$secret = "aaa";
 		$check = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
 		$answerAfterCheck = json_decode($check);
 		if ($answerAfterCheck->success==false)
@@ -196,9 +196,14 @@
 
                     <form class="form" action="" method="post">
 
-                        <div class="mt-1">
-                            <label for="login" class="form-label"> </label>
-                            <input type="text" name="username" class="form-control" placeholder="login" id="login" aria-describedby="loginHelp" value="<?php
+						<div class="input-group w-100 mt-5">
+
+                            <span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+                            </svg>
+                            </span>
+                            <input type="text" name="username" class="form-control" placeholder="login" id="login" aria-describedby="loginHelp" autofocus value="<?php
 							if (isset($_SESSION['f_username']))
 								{
 									echo $_SESSION['f_username'];
@@ -214,8 +219,14 @@
 								unset($_SESSION['e_username']);
 							}
 						?>
-                        <div class="mb-2">
-                            <label for="exampleFormControlInput1" class="form-label"> </label>
+
+						<div class="input-group w-100 my-5">
+
+                            <span class="input-group-text" id="basic-addon1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+								<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+								</svg>
+                            </span>
                             <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="email" value="
 							<?php
 							if (isset($_SESSION['f_email']))
@@ -233,9 +244,18 @@
 								unset($_SESSION['e_email']);
 							}
 						?>
-                        <div class="mb-2">
-                            <label for="exampleInputPassword1" class="form-label"> </label>
+
+						<div class="input-group w-100 my-5">
+
+							<span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                </svg>
+                            </span>
+
                             <input type="password" name="password" placeholder="hasło" class="form-control" id="exampleInputPassword1">
+
                         </div>
 
                         <?php
@@ -265,8 +285,8 @@
 
     <!-- footer -->
 
-    <footer class="bg-dark text-light mt-5 ">
-        <p class="py-5 px-3 mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
+	<footer class="bg-dark text-light footer fixed-bottom">
+        <p class="py-3  mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
     </footer>
 
 

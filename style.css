@@ -125,24 +125,15 @@ input[type=reset] {
     font-size: 1.6rem;
 }
 
+
 button[type=submit] {
     font-size: 1.4rem;
 }
 
-.form-select {
-    font-size: 4rem;
-}
-
 /* ========== */
-/*   footer    */
+/*   *******    */
 /* ========== */
 
-
-#footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
 
 /* ========== */
 /*   other    */
@@ -157,19 +148,7 @@ span.bold {
     border-bottom: 1px solid rgb(14, 192, 29);
 }
 
-/* select*/
 
-select {
-    font-size: 1.6rem;
-}
-
-option:hover {
-    color: blue;
-}
-
-.custom-select {
-    position: relative;
-}
 
 
 @media (min-width: 1200px) {

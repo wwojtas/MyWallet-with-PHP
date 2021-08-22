@@ -509,16 +509,16 @@
            
             <?php
                 if($difference > 0) {
-                    echo '<div class="row col-12">';
+                    echo '<div class="row col-12 pb-5 mb-5">';
                         echo '<p class="typeOfPayment bg-light text-center mt-3 w-50 offset-3 display-5"> GRATULACJE </p>';
                         echo '<p class="typeOfPayment bg-light text-center w-50 offset-3 display-5"> ŚWIETNIE ZARZĄDZASZ FINANSAMI </p>';
                     echo '</div>';   
                 } else if ($difference == 0) {
-                    echo '<div class="row">';
+                    echo '<div class="row pb-5 mb-5">';
                         echo '<p class=" bg-warning text-center mt-3 w-100 display-3"> Żyjesz na "0" </p>';
                     echo '</div>';
                 } else {
-                    echo '<div class="row">';
+                    echo '<div class="row pb-5 mb-5">';
                         echo '<p class=" bg-warning text-center mt-3 w-100 display-3"> Uważaj - Wpadasz w długi </p>';
                     echo '</div>';
                 }
@@ -529,9 +529,8 @@
 
     <!-- footer -->
 
-    <footer class="bg-dark text-light mt-5 ">
-        <p class="py-5 px-3 mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i
-                class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
+    <footer class="bg-dark text-light footer fixed-bottom">
+        <p class="py-3  mb-0 text-center"> Wszelkie prawa zastrzeżone &copy; 2021 Copyright <i class="fas fa-wallet orange-color px-3"></i><span class="orange-color">MyWallet</span> </p>
     </footer>
 
 <!-- bootstrap -->
